@@ -55,3 +55,44 @@ public int bunnyEars2(int bunnies) {
    
 }
 
+// Problem 5
+
+public int count7(int n) {
+  int count = 0;
+  if( n == 0 ) return 0;
+  
+  if( n % 10 == 7 )
+    count = count + 1;
+    
+    
+    return count + count7(n / 10);
+}
+
+
+// Problem 6
+
+public int count8(int n) {
+  int count = 0;
+  if ( n == 0 ) return 0;
+  
+  if ((n % 10 == 8) && ((n / 10) % 10 != 8 )) count = count + 1;
+  
+  if ((n % 10 == 8) && ((n / 10) % 10 == 8) ) count = count + 2;
+  
+  return count + count8(n/10);
+  
+}
+
+
+// Problem 7
+
+public int powerN(int base, int n) {
+
+  if ( n == 1 ) return base;
+  
+  return base * powerN(base,n-1);
+
+  
+}
+
+

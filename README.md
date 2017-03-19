@@ -1,5 +1,1 @@
-# JavaPractice
-
-#### source 1: https://www.hackerrank.com/challenges/
-#### source 2: https://www.leetcode.com
-#### source 3: Random
+- This Repo has my Programming practice solutions
