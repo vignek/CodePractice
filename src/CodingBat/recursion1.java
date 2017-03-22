@@ -95,4 +95,65 @@ public int powerN(int base, int n) {
   
 }
 
+// Problem 8
+
+public int countX(String str) {
+  String chr = "x";
+  
+  if(str.length() == 0 ) return 0;
+  
+
+  if(str.substring(0,1).equals(chr)) return 1 + countX(str.substring(1));
+
+  return countX(str.substring(1));
+}
+
+
+// Problem 9
+
+public int countHi(String str) {
+  String mStr = "hi";
+  
+  if(str.length() == 0 || str.length() == 1 ) return 0;
+  
+  if(str.substring(0,2).equals(mStr)) return 1 + countHi(str.substring(1));
+  
+  return countHi(str.substring(1));
+  
+}
+
+// Problem 10
+
+public String changeXY(String str) {
+  
+  String newStr = "";
+  char to = 'y';
+  char from = 'x';
+  if(str.length() == 0 ) return "";
+  
+  if(str.charAt(0) == from ) {
+    str = to + str.substring(1);  
+  }
+  
+  return str.charAt(0) + changeXY(str.substring(1, str.length()));
+ 
+}
+
+
+// Problem 11
+
+public String changePi(String str) {
+  
+  String from = "pi";
+  String to = "3.14";
+  
+  int index = str.indexOf(from);
+  int endIndex = index + from.length();
+  
+  if(index < 0) return str;
+  
+  return str.substring(0,index) + to + changePi(str.substring(endIndex));
+}
+
+
 
