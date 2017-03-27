@@ -155,5 +155,65 @@ public String changePi(String str) {
   return str.substring(0,index) + to + changePi(str.substring(endIndex));
 }
 
+// Problem 12
 
+public String noX(String str) {
+ String from = "x";
+ int index = str.indexOf(from);
+ int endIndex = from.length() + index ;
+ 
+ if(index < 0 ) return str;
+ 
+ return str.substring(0,index) + noX(str.substring(endIndex));
+ 
+}
+
+// Problem 13
+
+public boolean array6(int[] nums, int index) {
+
+  int find = 6;
+  
+  if(index >= nums.length) return false;
+  
+  if(nums[index] == find) return true;
+  
+  return array6(nums, index+1);
+
+  
+}
+
+// Problem 14
+
+public int array11(int[] nums, int index) {
+  
+  int count = 0;
+  
+  if(index >= nums.length ) return count;
+  
+  if(nums[index] == 11 ) count = count + 1;
+  
+  
+  return count + array11(nums, index+1);
+}
+
+// Problem 15
+
+public boolean array220(int[] nums, int index) {
+  
+  int tcount = 0;
+  
+  
+  if(nums.length == 0 || nums.length == 1 ) return false;
+
+  if( (index <= nums.length ) &&  ( (nums[index] * 10) == nums[index+1] ) ) {
+    tcount = tcount + 1;
+    return true;
+  }
+  
+  if (index == (nums.length-2) && ( tcount == 0) )
+      return false;
+    
+  return array220(nums, index+1);
+}
 
