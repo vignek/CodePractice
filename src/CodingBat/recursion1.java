@@ -19,8 +19,6 @@ public int bunnyEars(int bunnies) {
  return 2 + bunnyEars(bunnies-1);  
 }
 
-
-
 // Problem 3
 
 public int fibonacci(int n) {
@@ -36,9 +34,7 @@ public int fibonacci(int n) {
   
 }
 
-
 // Problem 4
-
 
 public int bunnyEars2(int bunnies) {
     int result = 0;
@@ -204,7 +200,7 @@ public boolean array220(int[] nums, int index) {
   int tcount = 0;
   
   
-  if(nums.length == 0 || nums.length == 1 ) return false;
+  if(nums.length <= 1 ) return false;
 
   if( (index <= nums.length ) &&  ( (nums[index] * 10) == nums[index+1] ) ) {
     tcount = tcount + 1;
@@ -217,16 +213,14 @@ public boolean array220(int[] nums, int index) {
   return array220(nums, index+1);
 }
 
-
 // Problem 16
 
 public String allStar(String str) {
   
-  if(str.length() == 0 | str.length() == 1 ) return str;
+  if(str.length() <= 1 ) return str;
   
   return str.charAt(0) + "*" + allStar(str.substring(1,str.length()));
 }
-
 
 // Problem 17
 
@@ -237,11 +231,11 @@ public String allStar(String str) {
   return str.charAt(0) + "*" + allStar(str.substring(1,str.length()));
 }
 
-
 // Problem 18
 
 public String pairStar(String str) {
-  if(str.length() == 0 || str.length() == 1 ) return str;
+  
+  if(str.length() <= 1 ) return str;
   
   if(str.charAt(0) == str.charAt(1))
     return str.charAt(0) + "*" + pairStar(str.substring(1,str.length()));
@@ -254,19 +248,20 @@ public String pairStar(String str) {
 
 public String endX(String str) {
   
-  if(str.length() == 0 || str.length() == 1) return str;
+  if(str.length() <= 1) return str;
   
   if(str.charAt(0) == 'x') return endX(str.substring(1)) + "x";  
   
   return str.charAt(0) + endX(str.substring(1));
 }
 
-
 // Problem 20
 
 public int countPairs(String str) {
+ 
   int count = 1;
-  if(str.length() == 0 || str.length() == 1 || str.length() == 2 ) return 0;
+ 
+  if(str.length() <= 2 ) return 0;
   
   if(str.charAt(0) == str.charAt(2) ) return count + countPairs(str.substring(1));
 
@@ -274,12 +269,11 @@ public int countPairs(String str) {
   
 }
 
-
 // Problem 21
 
 public int countAbc(String str) {
 
- if(str.length() == 0 || str.length() <= 2 ) return 0;
+ if(str.length() <= 2 ) return 0;
  
  if(str.substring(0,3).equals("abc") || str.substring(0,3).equals("aba"))
    return 1 + countAbc(str.substring(1));
@@ -288,15 +282,61 @@ public int countAbc(String str) {
  
 }
 
-
 // Problem 22 
 
 public int count11(String str) {
-  if(str.length() == 0 || str.length() == 1 ) return 0;
+  
+  if(str.length() <= 1 ) return 0;
   
   if(str.substring(0,2).equals("11")) return 1 + count11(str.substring(2));
   
-  return count11(str.substring(1));
+  return count11(str.substring(1)); 
+}
+
+// Problem 23
+
+public String stringClean(String str) {
+  
+  if(str.length() <= 1 ) return str;
+  
+  if(str.charAt(0) == str.charAt(1)) return stringClean(str.substring(1)); 
+
+  return str.charAt(0) + stringClean(str.substring(1));
   
 }
+
+// Problem 24
+
+public int countHi2(String str) {
+  if(str.length() <= 1 ) return 0;
+  
+  if(str.substring(0,2).equals("hi")) return 1 + countHi2(str.substring(2));
+
+  if(str.substring(0,3).equals("xhi")) return 0  + countHi2(str.substring(3));
+
+  return 0 + countHi2(str.substring(1));
+}
+
+// Problem 25
+
+public String parenBit(String str) {
+  int start = str.indexOf("(");
+  int end = str.indexOf(")");
+  
+  return str.substring(start,end+1);
+
+}
+
+// Problem 26
+
+
+
+// Problem 27
+
+
+
+// Problem 28
+
+
+// Problem 29
 
