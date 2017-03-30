@@ -217,3 +217,86 @@ public boolean array220(int[] nums, int index) {
   return array220(nums, index+1);
 }
 
+
+// Problem 16
+
+public String allStar(String str) {
+  
+  if(str.length() == 0 | str.length() == 1 ) return str;
+  
+  return str.charAt(0) + "*" + allStar(str.substring(1,str.length()));
+}
+
+
+// Problem 17
+
+public String allStar(String str) {
+  
+  if(str.length() == 0 | str.length() == 1 ) return str;
+  
+  return str.charAt(0) + "*" + allStar(str.substring(1,str.length()));
+}
+
+
+// Problem 18
+
+public String pairStar(String str) {
+  if(str.length() == 0 || str.length() == 1 ) return str;
+  
+  if(str.charAt(0) == str.charAt(1))
+    return str.charAt(0) + "*" + pairStar(str.substring(1,str.length()));
+    
+  return str.charAt(0) + pairStar(str.substring(1)); 
+  
+}
+
+// Problem 19
+
+public String endX(String str) {
+  
+  if(str.length() == 0 || str.length() == 1) return str;
+  
+  if(str.charAt(0) == 'x') return endX(str.substring(1)) + "x";  
+  
+  return str.charAt(0) + endX(str.substring(1));
+}
+
+
+// Problem 20
+
+public int countPairs(String str) {
+  int count = 1;
+  if(str.length() == 0 || str.length() == 1 || str.length() == 2 ) return 0;
+  
+  if(str.charAt(0) == str.charAt(2) ) return count + countPairs(str.substring(1));
+
+  return 0 + countPairs(str.substring(1));
+  
+}
+
+
+// Problem 21
+
+public int countAbc(String str) {
+
+ if(str.length() == 0 || str.length() <= 2 ) return 0;
+ 
+ if(str.substring(0,3).equals("abc") || str.substring(0,3).equals("aba"))
+   return 1 + countAbc(str.substring(1));
+
+ return 0 + countAbc(str.substring(1));
+ 
+}
+
+
+// Problem 22 
+
+public int count11(String str) {
+  if(str.length() == 0 || str.length() == 1 ) return 0;
+  
+  if(str.substring(0,2).equals("11")) return 1 + count11(str.substring(2));
+  
+  return count11(str.substring(1));
+  
+}
+
