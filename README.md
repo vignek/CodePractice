@@ -1,8 +1,10 @@
-Solutions to problems on HackerRank
+# Programming Practice 
 
-1. Python
-2. SQL
-3. Shell Scripting
-4. Cracking the Coding Interview
-5. Interview Preparation Kit
-6. Functional Programming
+## Introduction
+
+> The repository contains all the Essentials and Basics coding problems and my solutions to. I have mostly used Python 3. 
+> I have recently started to add comments to my solutions and links the source. Organized by Resource.
+
+## Installation
+
+> Just fork the code and start playing around.
