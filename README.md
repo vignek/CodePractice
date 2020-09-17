@@ -2,9 +2,6 @@
 
 ## Introduction
 
-> The repository contains all the Essentials and Basics coding problems and my solutions to. My current Language Python 3. 
-> I have recently started to add comments to my solutions and links the source. Organized by Resource.
+> The repository contains solutions to my coding problems practice. My current Language is Python. 
 
-## Installation
-
-> Just fork the code and start playing around.
+> Organized by Resource used.
