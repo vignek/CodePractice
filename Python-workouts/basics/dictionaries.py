@@ -45,6 +45,6 @@ print(bikes.values())
 
 print(bikes.items())
 
-print(bikes['bmw']['year'])
+# print(bikes['bmw']['year'])
 
-print(bikes.pop())
+# print(bikes.pop())
