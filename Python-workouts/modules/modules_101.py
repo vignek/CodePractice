@@ -5,7 +5,7 @@ Functions inside modules can be used after import
 
 
 import math
-import modulefinder.
+import modulefinder
 
 class ModulesExample(object):
 

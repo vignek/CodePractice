@@ -93,7 +93,7 @@ type()
 # *args -> Any number of args
 
 # print(min(10,20,30,40))
-# print(max(20,240,6,7))
+print(max(20,240,6,7))
 # print(abs(4445.22))
 # print(type(True))
 

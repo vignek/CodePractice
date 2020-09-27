@@ -1,5 +1,6 @@
 """
 min and max of a given arary
+Confident
 """
 
 
@@ -22,7 +23,7 @@ def manual_min_max(an_array):
     for i in range(2,n):
         if temp > an_array[i]:
             temp = an_array[i]
-    print(temp) # How do I return multiple variable
+    print(temp) 
 
     for i in range(2,n):
         if temp < an_array[i]:
@@ -40,3 +41,5 @@ def min_max_optimized(an_array):
     return results[0], results[-1]
 
 print(min_max_optimized([3,5,6,9,1,2,4])) 
+
+
