@@ -16,7 +16,7 @@ dict_1['one'] = 1
 dict_1['two'] = 2
 dict_1['three'] = dict_1['one'] + dict_1['two']
 
-# print(dict_1)
+print(dict_1)
 
 """
 Nested Dictionaries aka Dictionary within dictionary
@@ -45,6 +45,6 @@ print(bikes.values())
 
 print(bikes.items())
 
-print(bikes['bmw']['year'])
+# print(bikes['bmw']['year'])
 
-print(bikes.pop())
+# print(bikes.pop())
