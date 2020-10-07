@@ -18,4 +18,9 @@ def factorial(num):
             fact = fact * i
     return fact
 
-print(factorial(num))
+# print(factorial(num))
+
+def factorial1(num):
+    return 1 if (num == 0 or num == 1) else num * factorial(num-1);
+
+print(factorial1(num))

@@ -1,5 +1,7 @@
 """
-Two Sums
+Two Sums 
+1. One Solution
+2. Two Solutions - https://leetcode.com/problems/two-sum/
 """
 
 

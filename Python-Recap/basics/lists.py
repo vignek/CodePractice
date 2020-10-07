@@ -31,6 +31,7 @@ cars.count(2) # returns no of times items exist in a list
 sample_list = [1,2,3,3,4,5,6,5,7,7]
 
 new_sample = sample_list[::]
+print('-----')
 print(new_sample)
 
 new_sample_2 = []
