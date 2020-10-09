@@ -1,0 +1,37 @@
+   - Strings & Arrays - Frequently Asked interview questions 
+
+   - Reverse a Linked List
+ 
+   - Remove duplicates from a sorted linked list
+  
+   - Delete Node in a Linked List 
+   
+   - Array counter- count how many times a number appears in an array 
+   
+   - Find all primes from 2 to 100 
+   
+   - Merge Two Sorted Lists 
+   
+   - Parenthesis Matching 
+   
+   - Recursive String Permutations
+   
+   - Single Number 
+   
+   - Valid Anagram 
+
+   - Roman to Integer
+   
+   - Two Sum 
+   
+   - Maximum Subarray 
+   
+   - Best Time to Buy and Sell Stock 
+   
+   - Reverse Integer 
+   
+   - Longest Common Prefix 
+   
+   - Merge Sorted Array 
+   
+   - Longest Common Prefix

@@ -3,6 +3,7 @@ linked list
 """
 # 1 [address of 10 ]---> 10 [address of 5]--> 5 [address of 16] --> 16 [None]
 
+# Creating one single node
 class Node():
 
     def __init__(self,data):
@@ -29,7 +30,7 @@ class LinkedList():
             self.tail = new_node # value of last node updated
             self.length += 1
 
-    # Adding values to the end of the list
+    # Adding values to the beginning of the list
     def prepend(self,data):
         new_node = Node(data)
         new_node.next = self.head
@@ -40,7 +41,6 @@ class LinkedList():
     def insert(self, index, data):
         if (index >= self.length):
             self.append(data)
-            self.length += 1
             return self.print_list()
         else :
             new_node = Node(data)
@@ -54,9 +54,9 @@ class LinkedList():
 
     def delete_by_index(self,index):
         if( index > self.length  or  self.length == 0 ):
-            return self.print_list()
             print('cannot delete')
-        elif( self.length == 1):
+            return self.print_list()
+        elif( self.length == 1 ):
             self.head = None
             self.tail = self.head
             self.length = 0
@@ -67,15 +67,11 @@ class LinkedList():
             self.length -= 1
         return self.print_list()
 
-    def delete_by_data(self,data):
-        print('deleted')
-
     
     def traverse(self, index):
         current_node = self.head
         for counter in range(index):
             current_node = current_node.next
-
         return current_node
         
     def print_list(self):
@@ -85,6 +81,7 @@ class LinkedList():
             an_array.append(current_node.data)
             current_node = current_node.next
         return an_array
+
 
 
 new_linked_list = LinkedList()
