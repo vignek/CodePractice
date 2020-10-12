@@ -16,7 +16,7 @@ dict_1['one'] = 1
 dict_1['two'] = 2
 dict_1['three'] = dict_1['one'] + dict_1['two']
 
-print(dict_1)
+# print(dict_1)
 
 """
 Nested Dictionaries aka Dictionary within dictionary
@@ -39,12 +39,12 @@ pop() - will pop out the specified key and it's value out of dictionary
 bikes = {'bmw': {'model' : 'GS1500R', 'year' : 2020, 'price': 25000}, 'harley':{'model' : 'Ironrod', 'year' : 2020, 'price': 35000}}
 bikes_2 = {'make' : 'pulsar', 'model' : 'Pulsar', 'year' : 220, 'price': 95000}
 
-print(bikes.keys())
+# print(bikes.keys())
 
-print(bikes.values())
+# print(bikes.values())
 
-print(bikes.items())
+# print(bikes.items())
 
-# print(bikes['bmw']['year'])
+print(bikes['bmw'])
 
 # print(bikes.pop())

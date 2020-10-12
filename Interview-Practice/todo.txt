@@ -1,0 +1,103 @@
+Arrays / Lists :
+
+   > Find Two Sums  / Find all pairs of an integer array whose sum is equal to a given number
+
+   > Merge Two Sorted Lists 
+
+   > 217. Contains Duplicate / Count duplicate numbers in a list 
+   
+   > Given an integer array, find the Max contiguous subarray 
+
+   - Common Items
+
+   - Given an unsorted array of integers, find the length of the longest consecutive elements sequence
+
+
+   - Find Median of two sorted arrays / Min and Max in unsorted array
+
+   - Missing Number is a sequence / 268. Missing Number 
+
+   - 26. Remove Duplicates from Sorted Array
+
+
+---------
+
+   - Rotate_Array
+
+   - 283. Move Zeroes
+
+   - 169. Majority Element
+
+   - Stock buy and sell 
+
+   - Bubble sort an array   
+      
+   - Quick Sort an array
+
+
+Strings : 
+
+   > Reverse String 
+   
+   > Reverse a String using Recursion
+
+
+
+
+
+
+
+
+
+
+   - How do you check if two strings are anagrams of each other ?
+
+   - 125. Valid Palindrome ?
+
+   - How do you find all the permutations of a string ?
+
+   - Valid Parentheses Check ? 
+
+   - Find duplicate characters in a string using hashmap  ?
+
+   - 387. First Unique Character in a String ? 
+
+   - How do you find the length of the longest substring without repeating characters ?
+
+------------------------------
+
+
+   - How do you count a number of vowels and consonants in a given string ? 
+
+   - How do you check if a string contains only digits ?
+
+   - 14. Longest Common Prefix   
+
+   - How do you check if two strings are a rotation of each other?
+
+   - 13. Roman to Integer
+
+   - 28. Implement strStr()
+ 
+   - Recursive String Permutations
+
+Linked List : 
+
+   - Create a Linked List
+   
+   - Reverse a Linked List
+ 
+   - Remove duplicates from a sorted linked list
+
+   - Insert in a Linked List
+
+   - Delete Node in a Linked List 
+
+
+Common : 
+
+   - Find all primes from 2 to 100 
+
+   - Factorial.py
+
+   - Fibonacci.py

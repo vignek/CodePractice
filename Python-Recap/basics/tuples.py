@@ -1,6 +1,6 @@
 """
 Tuples : 
-is similar to list. but it is mutable.
+is similar to list. but it is immutable.
 """
 
 a_tuple = ('a', 'b', 1, 2.0, '3')
